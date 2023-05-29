@@ -1,0 +1,11 @@
+{
+  "id": 43,
+  "first_name": "Anrnu",
+  "last_name": "Hemnani",
+  "email": "sebastitestan@codingthesmartway.com",
+  "jobs": ["tester","trainer"],
+  "favFood": {
+    "breakfast": "idly",
+    "lunch": "paneer"
+  }
+}
