@@ -1,7 +1,15 @@
 import com.github.javafaker.Faker;
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import org.json.JSONObject;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -11,18 +19,36 @@ import java.nio.file.Paths;
 import java.util.*;
 
 import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.lessThan;
 
 public class PostTest {
+    @BeforeClass
+    public void setup () {
+
+        RequestSpecification request = new RequestSpecBuilder().addHeader ("Content-Type", "application/json")
+                .setBaseUri ("https://reqres.in/")
+                .addHeader ("Accept", "application/json")
+                .addFilter (new RequestLoggingFilter())
+                .addFilter (new ResponseLoggingFilter())
+                .build ();
+
+        ResponseSpecification response = new ResponseSpecBuilder().expectResponseTime (lessThan (10000L))
+                .build ();
+
+        RestAssured.requestSpecification = request;
+        RestAssured.responseSpecification = response;
+    }
 
     @Test
     public void postTest(){
-       Response response= given().body("{\n" +
-                "    \"id\": 4569,\n" +
-                "    \"first_name\": \"Annu4956\",\n" +
-                "    \"last_name\": \"Hemnani456\",\n" +
-                "    \"email\": \"sebastitestan@codingthesmartway.com\"\n" +
-                "  }").log().all().post(" http://localhost:3000/employees");
+       Response response= given().header("Content-type","application/json").body("{\n" +
+               "    \"name\": \"morpheus1\",\n" +
+               "    \"job\": \"leader1\",\n" +
+
+               "}").log().all().post(" /api/users");
        response.prettyPrint();
+       response.
+        System.out.println(response.statusCode());
 
     }
     @Test
