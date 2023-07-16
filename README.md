@@ -1,25 +1,22 @@
-# RestAssured
+Restful-booker API is an API playground created by Mark Winteringham for those wanting to learn more about API testing and tools.
 
-The APIs used for these classes to practice is based on very easy to use Book Store API. It gives a real world live project experience while using the sandbox environment of swagger tool to test the APIs.
+This project is my attempt to learn API test automation using Java and REST Assured.
 
-Endpoints
-Account
-POST /Account/v1/Authorized
-POST /Account/v1/GenerateToken
-POST /Account/v1/User
-BookStore
-GET /BookStore/v1/Books
-POST /BookStore/v1/Books
-DELETE /BookStore/v1/Book
-PUT /BookStore/v1/Books/{ISBN}
-Framework
-Structure
-This project is a standard Maven Java project with src folders and pom.xml
+Languages and Frameworks
+The project uses the following:
 
-Tests
-src/test/java/ package request package which hosts all the tests discussed in the video series.
+Java 11 as the programming language.
 
-Installation
-mvn clean install To install the project and it's dependencies
+REST Assured as the REST API test automation framework.
 
-Help
+Lombok to generate getters, setters and builders.
+
+JUnit 5 as the testing framework.
+
+Hamcrest as the matcher library.
+
+Datafaker as the fake data generation library.
+
+Maven as the Java build tool.
+
+IntelliJ IDEA as the IDE.
