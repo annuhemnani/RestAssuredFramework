@@ -1,6 +1,6 @@
 # Restful-booker API Playground
 
-Restful-booker API Playground is a project created by Mark Winteringham to help individuals learn more about API testing and related tools. This project serves as an opportunity for aspiring testers and developers to gain practical experience in API test automation using Java and REST Assured.
+Welcome to the Restful-booker API Playground! This project is designed to help you learn API test automation using Java and REST Assured.
 
 ## Languages and Frameworks
 
