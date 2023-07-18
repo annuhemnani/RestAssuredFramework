@@ -1,6 +1,7 @@
-# Restful-booker API Playground
+# Testing Restful-booker API 
 
-Welcome to the Restful-booker API Playground! This project is designed to help you learn API test automation using Java and REST Assured.
+This is a comprehensive API testing framework designed to help you learn and practice API test automation using Java and REST Assured. This project focuses on testing the **Restful-booker API**, which provides endpoints for managing hotel bookings.
+
 
 ## Languages and Frameworks
 
@@ -14,6 +15,17 @@ The project is built using the following technologies:
 - **Datafaker**: Datafaker is the library used to generate fake data, facilitating data-driven testing scenarios.
 - **Maven**: Maven is the chosen Java build tool to handle project dependencies, build processes, and project management.
 - **IntelliJ IDEA**: IntelliJ IDEA is the integrated development environment used for writing, debugging, and testing the API automation code.
+
+  ## What Does it Test?
+
+The Restful-booker API Playground tests various functionalities of the Restful-booker API, including:
+
+1. **Creating Bookings**: Verifying the ability to create new hotel bookings through API calls.
+2. **Updating Bookings**: Ensuring that booking details can be updated correctly via API requests.
+3. **Deleting Bookings**: Validating the deletion of bookings using the appropriate API endpoints.
+4. **Retrieving Bookings**: Checking the API's ability to retrieve booking information based on specific criteria.
+5. **Authentication & Authorization**: Testing the security aspects of the API, including authentication and access control.
+
 
 ## Getting Started
 
