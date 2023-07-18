@@ -1,7 +1,6 @@
 # Testing Restful-booker API 
 
-This is a comprehensive API testing framework designed to help you learn and practice API test automation using Java and REST Assured. This project focuses on testing the **Restful-booker API**, which provides endpoints for managing hotel bookings.
-
+This is a comprehensive API testing framework designed to showcase and practice API test automation using Java and REST Assured. This project focuses on testing the Restful-booker API, which provides endpoints for managing hotel bookings.
 
 ## Languages and Frameworks
 
