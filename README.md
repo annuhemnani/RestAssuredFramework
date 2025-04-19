@@ -6,7 +6,7 @@ This is a comprehensive API testing framework designed to showcase and practice 
 
 The project is built using the following technologies:
 
-- **Java 11**: Java is used as the primary programming language to write the API test automation code.
+- **Java 17**: Java is used as the primary programming language to write the API test automation code.
 - **REST Assured**: REST Assured is employed as the REST API test automation framework, providing a rich set of features to interact with APIs.
 - **Lombok**: Lombok is utilized to automatically generate getters, setters, and builders, reducing boilerplate code in Java classes.
 - **TestNG**: TestNG serves as the testing framework, enabling the creation and execution of test cases.
