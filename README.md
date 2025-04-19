@@ -30,7 +30,7 @@ The Restful-booker API Playground tests various functionalities of the Restful-b
 
 To get started with the Restful-booker API Playground and run the API tests on your local machine, follow these steps:
 
-1. **Prerequisites**: Ensure you have Java Development Kit (JDK) 11 or later installed on your system.
+1. **Prerequisites**: Ensure you have Java Development Kit (JDK) 17 or later installed on your system.
 
 2. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
